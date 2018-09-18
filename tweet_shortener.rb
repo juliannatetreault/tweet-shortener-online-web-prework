@@ -39,4 +39,5 @@ end
 #truncates tweets over 140 characters after shortening
 def shortened_tweet_truncator(tweet)
   shortened_tweet = selective_tweet_shortener(tweet)
+  if shortened_tweet.length > 140 ? 
 end
