@@ -15,16 +15,6 @@ def dictionary
 end
 
 #replaces long words with their expected short form using the dictionary of tweet substitutes
-#def word_substituter(tweet_string)
- # final_tweets = []
-  #dictionary_array = dictionary.keys
-  #tweet_array = tweet_string.split(" ")
-  #tweet_array.each do |word|
-   # dictionary_array.include?(word) ? final_tweets << dictionary[word] : final_tweets << word
-#end
- # final_tweets.join(" ")
-#end
-
 def word_substituter(tweet_string)
   tweet_array = tweet_string.split(" ")
   dictionary.keys.each do |word|
@@ -32,8 +22,6 @@ def word_substituter(tweet_string)
   end
   tweet_array.join(" ")
 end
-
-
 
 #shortens each tweet and prints the result 
 def bulk_tweet_shortener(tweets)
