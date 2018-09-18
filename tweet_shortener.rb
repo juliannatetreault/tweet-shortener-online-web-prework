@@ -25,8 +25,8 @@ end
  # final_tweets.join(" ")
 #end
 
-def word_substituter(tweet)
-  tweet_arr = tweet.split(" ")
+def word_substituter(tweet_string)
+  tweet_array = tweet_string.split(" ")
   dictionary.keys.each do |i|
     tweet_arr.map! { |x| x.downcase == i ? dictionary[i] : x }
   end
