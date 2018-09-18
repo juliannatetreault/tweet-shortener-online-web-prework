@@ -25,13 +25,14 @@ end
  # final_tweets.join(" ")
 #end
 
-def word_substituter(tweet_string)
-  tweet_array = tweet_string.split(" ")
-  dictionary.keys.each do |word|
-    tweet_array.map! { |w| w.downcase == word ? dictionary[word] : w }
+def word_substituter(tweet)
+  tweet_arr = tweet.split(" ")
+  dictionary.keys.each do |i|
+    tweet_arr.map! { |x| x.downcase == i ? dictionary[i] : x }
   end
-  tweet_arrary.join(" ")
+  tweet_arr.join(" ")
 end
+
 
 
 #shortens each tweet and prints the result 
