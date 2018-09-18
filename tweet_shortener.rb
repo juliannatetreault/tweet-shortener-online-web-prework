@@ -34,7 +34,6 @@ end
 #does not shorten tweets that are less than 130 characters
 def selective_tweet_shortener(tweet)
   tweet.length > 140 ? word_substituter(tweet) : tweet
-  end
 end
 
 #truncates tweets over 140 characters after shortening
