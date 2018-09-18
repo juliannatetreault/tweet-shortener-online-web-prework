@@ -32,8 +32,8 @@ end
 
 #shortens tweets that are more than 140 characters
 #does not shorten tweets that are less than 130 characters
-def selective_tweet_shortener
-  if 
+def selective_tweet_shortener(tweet)
+  if tweet =< 
 end
 
 #truncates tweets over 140 characters after shortening
