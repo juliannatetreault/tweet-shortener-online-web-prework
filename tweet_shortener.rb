@@ -44,4 +44,6 @@ def shortened_tweet_truncator(tweet)
   elsif
     shortened_tweet.length > 140 
       [0...140-3] + "..." 
+    else
+      tweet
 end
